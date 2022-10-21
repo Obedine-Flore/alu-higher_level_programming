@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 for file in /alu-higher_level_programming/python-if_else_loops_functions/*
 do
-echo "#!/usr/bin/python3" > &{file}
+echo "#!/usr/bin/python3" > ${file}
 done

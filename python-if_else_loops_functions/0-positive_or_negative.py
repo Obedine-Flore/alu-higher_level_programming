@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import random
-number = random.radiant(-10,10)
+number = random.randint(-10,10)
 for n in number:
     if n > 0:
         print(n, "is positive")

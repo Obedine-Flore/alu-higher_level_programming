@@ -1,6 +1,6 @@
 #!/usr/bin/pyhton3
-def isupper(c):
-    if ord(c) >= 65 and ord(c) < 91:
+def uppercase(str):
+    if ord(str) >= 65 and ord(str) < 91:
         return True
     else:
         return False

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-if string.islower() == True:
-    print("{} is lower".format(string.islower()))
-else:
-    print("{} is upper".format(string()))
+def islower(c):
+    for c in str
+    if ord(c) >= 97 and ord(c) <= 122:
+        return True
+    else:
+        return False

@@ -1,6 +1,7 @@
 #!/usr/bin/pyhton3
 def uppercase(str):
-    if ord(str) >= 65 and ord(str) < 91:
-        return True
-    else:
-        return False
+    for char in str:
+        if 123 > ord(char) > 96:
+            char == (ord(char) - 32)
+            print("{}.format(char), end="")
+            print(' ')

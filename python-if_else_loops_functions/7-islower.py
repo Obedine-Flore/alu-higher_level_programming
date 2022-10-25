@@ -2,4 +2,4 @@
 if string.islower() == True:
     print("{} is lower".format(string.islower()))
 else:
-    print("{} is upper".format(string.isupper()))
+    print("{} is upper".format(string()))

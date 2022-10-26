@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for file in /alu-higher_level_programming/python-import_modules/*
+for file in alu-higher_level_programming/python-import_modules/*
 do
 echo "#!/usr/bin/python3" > ${file}
 done

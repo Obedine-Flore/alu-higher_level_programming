@@ -1,8 +1,9 @@
-#!/usr/bib/pyn3
+
+#!/usr/bin/python3
 
 from add_0 import add
 
 a = 1
 b = 2
-if _name_ == '_main_':
+if __name__ == '__main__':
     print("{} + {} = {}".format(a, b, add(a, b)))

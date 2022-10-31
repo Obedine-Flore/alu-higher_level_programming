@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+for file in /alu-higher_level_programming/python-data_structures/*
+do
+    echo "#!/usr/bin/python3" > ${file}
+done

@@ -1,34 +1,40 @@
 #!/usr/bin/python3
-"""Write a class Square that defines a square by"""
+"Create a square "
 
 
 class Square:
-    """Write a class Square that defines a square by"""
+    '''
+    Create a square
+        Has a private Instance att: size
+    '''
 
     def __init__(self, size=0):
-        self.size = size
+        ''' init size '''
+        self.__size = size
 
     @property
     def size(self):
+        "returns the size att"
         return self.__size
 
     @size.setter
-    def size(self, value):
-        if type(value) is not int:
-            raise TypeError("size must be integer")
-        elif value < 0:
+    def size(self, size):
+        '''asign the size to the size att'''
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = size
 
     def area(self):
-        return self.__size**2
+        square_area = self.__size ** 2
+        return square_area
 
     def my_print(self):
         if self.__size == 0:
             print()
         else:
             for i in range(self.__size):
-                for s in range(self.__size):
-                    print('#', end="")
+                for j in range(self.__size):
+                    print("#", end="")
                 print()

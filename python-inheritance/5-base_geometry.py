@@ -3,6 +3,6 @@
 
 
 class BaseGeometry:
-    """about to leave it empty
+    """about to leave it empty"""
 
     pass

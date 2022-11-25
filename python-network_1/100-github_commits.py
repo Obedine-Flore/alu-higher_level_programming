@@ -1,18 +1,19 @@
 #!/usr/bin/python3
-'''takes your GitHub credentials'''
-
+"""lists the 10 most recent commits on the master branch of the repository"""
 import requests
 import sys
-import requests.auth
+
 
 if __name__ == "__main__":
-    username = sys.argv[1]
-    password = sys.argv[2]
-    basic = requests.auth.HTTPBasicAuth(username, password)
-    reply = requests.get(
-        'https://api.github.com/user', auth=basic)
+    url = "https://api.github.com/repos/{}/{}/commits".format(
+        sys.argv[2], sys.argv[1])
+
+    r = requests.get(url)
+    commits = r.json()
     try:
-        json_response = reply.json()
-        print("{}".format(json_response["id"]))
-    except:
-        print(None)
+        for i in range(10):
+            print("{}: {}".format(commits[i].get("sha"),
+                                  commits[i].get("commit").get("author")
+                                  .get("name")))
+    except IndexError:
+        pass

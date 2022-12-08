@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-def add_integer(a, b = 98):
+
+def add_integer(a, b=98):
     '''This function returns the sum of two numbers'''
 
     a = int(a)
@@ -11,4 +12,4 @@ def add_integer(a, b = 98):
     if type(b) != int:
         raise TypeError("b must be an integer")
 
-    return a + b
+    return int(a) + int(b)

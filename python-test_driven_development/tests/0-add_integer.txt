@@ -1,0 +1,52 @@
+==========================================
+test cases of the 0-add_integer.py module
+==========================================
+
+>>> add_integer = _import_('0-add_integer').add_integer
+
+>>> add_integer(7, 1)
+9
+
+>>> add_integer(2, -1)
+1
+
+>>> add_integer(1)
+99
+
+The default value of 98 is assigned to b if only one value given.
+
+>>> add_integer('z')
+Traceback (most recent call last):
+Typeerror: a must be an integer
+
+>>> add_integer(5, 'b')
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(8, '4')
+Trcaeback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(2.9, 4)
+6
+
+The float assigned to a is converted to an integer before the operation is performed
+
+>>> add_integer(6.25)
+104
+
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float Nan to integer
+
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(float(inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer("Good", "morning")
+Traceback (most recent call last):
+TypeError: a must be an integer

@@ -1,0 +1,42 @@
+Usage of 3-say_my_name.txt
+
+>>> say_my_name = _import_('3-say_my_name').say_my_name
+
+>>> say_my_name("Heart", "Philia")
+My name is Heart philia
+
+>>> say_my_name(23, "Bissa")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("Bissa", 23
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my name("Bissa", None)
+Traceback (most recent call):
+TypeError: last_name must be a string
+
+>>> say_my_name(None, None)
+Traceback (most recent call):
+TypeError: first_name must be a string
+
+>>> say_my_name(["Hardin", "Scott"])
+Traceback (most recent call):
+TypeError: first_name must be a string
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name requires at least 1 positional argument
+
+>>> say_my_name(88)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name(88, 99)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("Tessa", "Young", "Scott")
+Trcaeback (most recent call last):
+TypeError: say_my_name() takes a maximum of 2 positional arguments.

@@ -1,0 +1,22 @@
+>>> Functionality of the 5-text_indentation function
+
+>>> text_indentation = _import_('5-text_indentation').text_indentation
+
+>>> text_indentation("Flore: are you okay? Good.")
+Flore: 
+
+are you okay?
+
+Good.
+
+>>> text_indentation()
+Traceback (most recent call back)
+TypeError: text_indentation() missing one positional argument
+
+>>> text_indentation(None)
+Traceback (most recent call back)
+TypeError: text must be a string
+
+>>> text_indentation(4.8)
+Traceback (most recent call back)
+TypeError: text must be a string

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""this script lists all cities from the hbtn database"""
 
 
 import sys

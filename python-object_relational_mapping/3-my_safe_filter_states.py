@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""this script matches values in staes table of hbtn_0e"""
 
 
 import MySQLdb

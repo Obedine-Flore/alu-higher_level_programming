@@ -7,6 +7,7 @@ import sys
 
 
 def main():
+    """this function lists all the states from the hbtn database"""
     db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
             passwd=sys.argv[2], db=sys.argv[3])
 

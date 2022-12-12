@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""this script  lists all states from the database hbtn_0e_0_usa"""
+"""This script lists all the states from the hbtn_0e_0_usa database"""
 
 import MySQLdb
 import sys
 
 
 def main():
-    """this function lists all the states from the hbtn database"""
+    """This function lists all the states from the
+    hbtn_0e_usa database"""
     db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
             passwd=sys.argv[2], db=sys.argv[3])
-
     crs = db.cursor()
 
     crs.execute("SELECT * FROM states ORDER BY id ASC")

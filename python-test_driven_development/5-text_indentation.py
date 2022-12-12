@@ -5,6 +5,7 @@ This function prints a text with two lines after the characters . ? and : are us
 
 
 def text_indentation(text):
+    '''indents the text after a specified character'''
     if text is None:
         raise TypeError("text must be a string")
     elif text is not isinstance(text, str):

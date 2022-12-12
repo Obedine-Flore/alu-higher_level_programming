@@ -1,4 +1,4 @@
-Usage of 3-say_my_name.txt
+Import 'say_my_name'
 
 >>> say_my_name = _import_('3-say_my_name').say_my_name
 

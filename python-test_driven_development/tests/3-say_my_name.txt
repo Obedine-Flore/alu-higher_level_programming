@@ -3,18 +3,14 @@ Import 'say_my_name'
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 >>> say_my_name("Heart", "Philia")
-My name is Heart philia
+My name is Heart Philia
 
 >>> say_my_name(23, "Bissa")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("Bissa", 23
+>>> say_my_name("Bissa", 23)
 Traceback (most recent call last):
-TypeError: last_name must be a string
-
->>> say_my name("Bissa", None)
-Traceback (most recent call):
 TypeError: last_name must be a string
 
 >>> say_my_name(None, None)

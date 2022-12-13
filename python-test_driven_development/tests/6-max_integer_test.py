@@ -43,4 +43,12 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_integers(self):
         '''case with negative numbers'''
-        self.assertEqual([-1, 4, -5, 3]), 4)
+        self.assertEqual([-1, 4, 1, 3]), 4)
+
+    def test_negative_integers(self):
+        '''case with negative integers only'''
+        self.assertEqual([-1, -2, -3, -4]), -1)
+
+    def test_empty_list(self):
+        '''case with an empty list'''
+        self.assertEqual([], None)

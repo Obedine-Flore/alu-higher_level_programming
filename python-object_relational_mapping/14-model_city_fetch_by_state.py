@@ -10,7 +10,7 @@ from model_city import City
 from sys import argv
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     # Create engine
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                             .format(argv[1], argv[2], argv[3]),

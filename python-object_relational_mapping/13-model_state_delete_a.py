@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""This script changes the name of a State object
-from the database"""
+"""
+This script changes the name of a State object from the database
+"""
 
 import sqlalchemy
 from sqlalchemy import create_engine
@@ -9,7 +10,7 @@ from model_state import Base, State
 from sys import argv
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     # Create engine
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                             .format(argv[1], argv[2], argv[3]),

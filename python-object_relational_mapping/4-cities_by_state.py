@@ -1,26 +1,19 @@
 #!/usr/bin/python3
-"""This script lists all cities from the hbtn database"""
+"""This script lists all cities from the database hbtn_0e_4_usa"""
 
-import sys
 import MySQLdb
+import sys
 
 
-if _name_ == "_main_":
-    db = MySQLdb.connect(
-            user=sys.argv[1],
-            passwd=sys.argv[2],
-            db=sys.argv[3],
-            host="localhost",
-            port=3306
-        )
-
+if __name__ == "__main__":
+    db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
+                         passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
     crs = db.cursor()
-    crs.execute("SELECT cities.id, cities.name, states.name \
-                FROM cities, states WHERE cities.state_id = states.id \
-                ORDER BY id ASC")
-
+    crs.execute("SELECT cities.id, cities.name, states.name FROM cities\
+                INNER JOIN states ON cities.state_id = states.id\
+                ORDER BY cities.id ASC")
     rows = crs.fetchall()
-
     for i in rows:
         print(i)
+    crs.close()
     db.close()

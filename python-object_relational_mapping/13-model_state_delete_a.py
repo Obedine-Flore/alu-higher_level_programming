@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This script changes the name of a State object from the database
-"""
+"""This script changes the name of a State object from the database"""
 
 import sqlalchemy
 from sqlalchemy import create_engine
@@ -19,12 +17,10 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    
     # Query
     states = session.query(State).filter(State.name.like('%a%'))
     for state in states:
         session.delete(state)
-    
     # Close session
     session.commit()
     session.close()

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""this script lists all sates with a name starting with
-N from the database hbtn_0e_0_usa"""
+"""
+This script lists all sates with a name starting with
+N from the database hbtn_0e_0_usa
+"""
 
 
 import MySQLdb

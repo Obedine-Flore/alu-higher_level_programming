@@ -27,7 +27,7 @@ class Base:
 
         @staticmethod
         def to_json_string(list_directories):
-            """This function converts a list of dictionaries to 
+            """This function converts a list of dictionaries to
             a JSON string"""
             if list_dictionaries is None or \
                     len(list_dictionaries) == 0:
@@ -77,5 +77,5 @@ class Base:
             list_diction = cls.from_json_string(content)
             list_instances = []
             for dict_instance in list_dicts:
-                list_instances,append(cls.create(**dict_instance))
+                list_instances, append(cls.create(**dict_instance))
             return list_instances

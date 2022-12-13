@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This script changes the name of a State object from the database"""
+"""Changes the name of a State object from the database"""
 
 import sqlalchemy
 from sqlalchemy import create_engine

@@ -3,7 +3,7 @@
 hbtn_0e_4_usa database"""
 
 
-import MtSQLdb
+import MySQLdb
 import sys
 
 

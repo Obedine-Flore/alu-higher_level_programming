@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" this script takes an argument and displays the argument"""
-
+"""This script takes an argument and displays the argument"""
 
 import MySQLdb
 import sys

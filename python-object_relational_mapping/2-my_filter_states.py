@@ -3,7 +3,7 @@
 hbtn_0e_0_usa where name matches the argument"""
 
 
-import My SQLdb
+import MySQLdb
 import sys
 
 

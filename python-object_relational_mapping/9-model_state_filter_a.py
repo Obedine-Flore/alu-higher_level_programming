@@ -8,7 +8,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import sqlalchemy
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     # Create engine
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                             .format(argv[1], argv[2], argv[3]),

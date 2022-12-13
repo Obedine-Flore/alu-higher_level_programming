@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """This script changes the name of a State object
 from the database"""
 
@@ -9,7 +9,7 @@ from model_state import Base, State
 from sys import argv
 
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     # Create engine
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                             .format(argv[1], argv[2], argv[3]),
@@ -18,10 +18,12 @@ if _name_ == "_main_":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
+    
     # Query
     states = session.query(State).filter(State.name.like('%a%'))
     for state in states:
         session.delete(state)
+    
     # Close session
     session.commit()
     session.close()

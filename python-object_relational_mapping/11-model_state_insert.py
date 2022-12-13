@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 from sys import argv
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     # Create engine
     engine = cretae_engine('mysql+mysqldb://{}:{}@localhost/{}'
                             .format(argv[1], argv[2], argv[3]),

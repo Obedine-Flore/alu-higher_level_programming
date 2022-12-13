@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" this script takes an argument and displays in the states table of 
-hbtn_0e_0_usa where name matches the argument"""
+""" this script takes an argument and displays the argument"""
 
 
 import MySQLdb

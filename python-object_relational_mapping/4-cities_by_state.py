@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""this script lists all cities from the hbtn database"""
-
+"""This script lists all cities from the hbtn database"""
 
 import sys
 import MySQLdb
@@ -17,8 +16,8 @@ if _name_ == "_main_":
 
     crs = db.cursor()
     crs.execute("SELECT cities.id, cities.name, states.name \
-            FROM cities, states WHERE cities.state_id = states.id \
-            ORDER BY id ASC")
+                FROM cities, states WHERE cities.state_id = states.id \
+                ORDER BY id ASC")
 
     rows = crs.fetchall()
 

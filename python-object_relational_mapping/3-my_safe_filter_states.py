@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""this script matches values in staes table of hbtn_0e"""
-
+"""
+This script matches values in staes table of hbtn_0e
+"""
 
 import MySQLdb
 from sys import argv

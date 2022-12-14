@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""This script lists all the state objects from the
-hbtn_0e_6_usa database"""
+"""This script lists all State objects from the database hbtn_0e_6_usa"""
 
 import sqlalchemy
 from sqlalchemy import Column, Integer, String
@@ -11,6 +10,6 @@ Base = declarative_base()
 
 class State(Base):
     """class state"""
-    _tablename_ = 'states'
-    id = Column(Inteeger, primary_key=True, nullable=False)
+    __tablename__ = 'states'
+    id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)

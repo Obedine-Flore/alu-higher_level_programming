@@ -13,7 +13,7 @@ if __name__ == "_main_":
                             .format(argv[1], argv[2], argv[3]),
                             pool_pre_ping=True)
     # Create session
-    Base.metadata.cretae_all(engine)
+    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
     # Query

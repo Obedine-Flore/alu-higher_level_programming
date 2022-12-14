@@ -20,10 +20,6 @@ Functionality of the 4-print_square.txt function
 
 >>> print_square(0)
 
->>> print_square(2, 4)
-Traceback (most recent call last):
-TypeError: print_square() takes 1 positional argument only
-
 >>> print_square("4")
 Traceback (most recent call last):
 TypeError: size must be an integer
@@ -34,7 +30,7 @@ TypeError: size must be an integer
 
 >>> print_square()
 Traceback (most recent call last):
-TypeError: print_square() missing one positional argument
+TypeError: print_square() missing 1 positional argument
 
 >>> print_square(2.01)
 Traceback (most recent call last):

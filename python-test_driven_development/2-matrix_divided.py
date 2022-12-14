@@ -3,20 +3,19 @@
 This function divides each element of a matrix
 """
 
-
 def matrix_divided(matrix, div):
-    '''divides matrix by constant'''
+    """divides matrix by constant"""
     if not isinstance(matrix, (list,)):
         raise TypeError("matrix must be a matrix
-                (list of lists) of integers or floats")
+                        (list of lists) of integers or floats")
     for row in matrix:
         if type(row) != list:
             raise TypeError("matrix must be a matrix
-                    (list of lists) of integers or floats")
+                            (list of lists) of integers or floats")
         for element in row:
             if not isinstance(item, (int, float)):
                 raise TypeError("matrix must be a matrix
-                        (list of lists) of integersor floats")
+                                (list of lists) of integersor floats")
     size = len(matrix[0])
     for row in matrix:
         if len(row) != size:

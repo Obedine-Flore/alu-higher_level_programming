@@ -14,7 +14,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_unordered_list(self):
         """case of an unordered list"""
-        self.assertEqual(max_integer([5, 7, 1, 6]), 6)
+        self.assertEqual(max_integer([5, 7, 1, 6]), 7)
 
     def test_empty_list(self):
         """case of an empty list"""
@@ -42,7 +42,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_list_of_strings(self):
         """case with a list of strings"""
-        self.assertEqual(max_integer(["I", "Am", "Happy"]), "Happy")
+        self.assertEqual(max_integer(["I", "Am", "Happy"]), "I")
 
     def test_empty_string(self):
         """case of an empty string"""

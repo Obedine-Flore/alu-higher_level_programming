@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""This script prints all City objects from
-hbtn_0e_14_usa"""
+"""This script prints all City objects from hbtn_0e_14_usa"""
 
 import sqlalchemy
 from sqlalchemy import create_engine

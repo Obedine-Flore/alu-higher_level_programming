@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This script that takes in an argument and displays all values in the states"""
+"""This script that takes in an argument and displays all
+values in the states"""
 
 import MySQLdb
 from sys import argv

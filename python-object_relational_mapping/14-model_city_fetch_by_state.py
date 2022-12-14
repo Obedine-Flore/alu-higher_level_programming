@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""This script prints all City objects from hbtn_0e_14_usa"""
+"""This script prints all city objects from hbtn_0e_14_usa"""
 
 import sqlalchemy
 from sqlalchemy import create_engine
-from sqlqlchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 from model_city import City
 from sys import argv
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     # Create engine
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(argv[1], argv[2], argv[3]),
@@ -19,7 +19,7 @@ if __name__ == "_main_":
     Session = sessionmaker(bind=engine)
     session = Session()
     # Query
-    cities = session.querry(City, State).filter(City.state_id == State.id).all()
+    cities = session.query(City, State).filter(City.state_id == State.id).all()
     for city, state in cities:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
     # Close session

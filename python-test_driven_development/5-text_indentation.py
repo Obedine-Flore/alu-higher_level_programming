@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This function prints a text with two lines after the characters . ? and : are used
+This function prints a text with two lines after the characters
+. ? and : are used
 """
 
 

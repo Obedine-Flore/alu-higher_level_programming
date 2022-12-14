@@ -1,12 +1,10 @@
->>> Functionality of the 5-text_indentation function
-
->>> text_indentation = _import_('5-text_indentation').text_indentation
+>>> text_indentation = __import__('5-text_indentation').text_indentation
 
 >>> text_indentation("Flore: are you okay? Good.")
-Flore: 
-
+Flore:
+<BLANKLINE>
 are you okay?
-
+<BLANKLINE>
 Good.
 
 >>> text_indentation()

@@ -9,18 +9,18 @@ from model_state import Base, State
 
 
 if __name__ == "__main__":
-    #Create engine
+    # Create engine
     my_engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(
         sys.argv[1], sys.argv[2], sys.argv[3]),
         pool_pre_ping=True)
 
-    #Create seesion
+    # Create seesion
     Base.metadata.create_all(my_engine)
     my_session = Session(my_engine)
 
     state_name = sys.argv[4]
 
-    #Query
+    # Query
     state = my_session.query(State).filter(State.name == state_name).first()
 
     if state is None:
@@ -28,5 +28,5 @@ if __name__ == "__main__":
     else:
         print(f'{state.id}')
 
-    #Close session
+    # Close session
     my_session.close()

@@ -29,6 +29,5 @@ TypeError: first_name must be a string
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("Tessa", "Young", "Scott")
-Trcaeback (most recent call last):
-TypeError: say_my_name() takes a maximum of 2 positional arguments.
+>>> say_my_name("Tessa Young", "Scott")
+My name is Tessa Young Scott

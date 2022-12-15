@@ -15,9 +15,9 @@ test cases of the 0-add_integer.py module
 
 The default value of 98 is assigned to b if only one value given.
 
->>> add_integer(8, '4')
-Trcaeback (most recent call last):
-TypeError: b must be an integer
+>>> add_integer("8", 4)
+Traceback (most recent call last):
+TypeError: a must be an integer
 
 >>> add_integer(2.9, 4)
 6
@@ -29,7 +29,7 @@ The float assigned to a is converted to an integer before the operation is perfo
 
 >>> add_integer(float('nan'))
 Traceback (most recent call last):
-ValueError: cannot convert float Nan to integer
+ValueError: cannot convert float NaN to integer
 
 >>> add_integer(float('inf'))
 Traceback (most recent call last):

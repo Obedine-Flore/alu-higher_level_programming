@@ -1,38 +1,38 @@
-import 'matrix_divided'
+Import `matrix_divided`
 
->>> matrix_divided = _import_('2-matrix_divided').matrix_dividedd
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
->>> matrix = [[2, 4, 6], [1, 3, 5]]
+>>> matrix = [[1, 2, 3], [2, 4, 6]]
 
 >>> matrix_divided(matrix, 2)
-[[1, 2, 3], [0.5, 1.5, 2.5]]
+[[0.5, 1.0, 1.5], [1.0, 2.0, 3.0]]
+
+>>> matrix_divided(matrix, '2')
+Traceback (most recent call last):
+TypeError: div must be a number
 
 >>> matrix_divided(matrix, 0)
 Traceback (most recent call last):
 ZeroDivisionError: division by zero
 
->>> matrix_divided(matrix, '8')
-Traceback (most recent call last):
-TypeError: div must be a number
-
 >>> matrix_divided(0, 2)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
->>> matirx_divided([[2, 4], [6]], 3)
+>>> matrix_divided([[1, 2],[3]], 4)
 Traceback (most recent call last):
 TypeError: Each row of the matrix must have the same size
 
->>>matrix_divided(matrix)
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+>>> matrix_divided([[1, 2, float('inf')], [3, 4, 5]], 6)
+[[0.17, 0.33, inf], [0.5, 0.67, 0.83]]
+
+>>> matrix_divided(matrix)
 Traceback (most recent call last):
-TypeError: matrix_divided() missing 1 required positional argument
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
 >>> matrix_divided()
 Traceback (most recent call last):
-TypeError: matrix_divided() missing 2 required positional arguments
-
->>> matrix_divided(matrix, float("inf"))
-[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
-
->>> matrix_divided([[2, 4, float('inf')], [6, 7, 8]], 1)
-[[2, 4, inf], [6, 7, 8]]
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'

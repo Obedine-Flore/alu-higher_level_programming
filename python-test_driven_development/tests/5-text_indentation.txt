@@ -1,20 +1,25 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
->>> text_indentation("Flore: are you okay? Good.")
-Flore:
-<BLANKLINE>
-are you okay?
-<BLANKLINE>
-Good.
-
 >>> text_indentation()
 Traceback (most recent call last):
 TypeError: text_indentation() missing 1 required positional argument: 'text'
 
->>> text_indentation(None)
+>>> text_indentation("Hey. Good? How are you: Ella")
+Hey.
+<BLANKLINE>
+Good?
+<BLANKLINE>
+How are you:
+<BLANKLINE>
+Ella
+
+>>> text_indentation(3)
 Traceback (most recent call last):
 TypeError: text must be a string
 
->>> text_indentation(4.8)
-Traceback (most recent call back)
-TypeError: text must be a string
+>>> text_indentation("African. Leadership? University")
+African.
+<BLANKLINE>
+Leadership?
+<BLANKLINE>
+University

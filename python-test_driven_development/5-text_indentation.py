@@ -1,17 +1,11 @@
 #!/usr/bin/python3
-"""
-This function prints a text with two lines after the characters
-. ? and : are used
-"""
+"""This script defines a function that prints a text with 2 new lines"""
 
 
 def text_indentation(text):
-    '''indents the text after a specified character'''
-    if text is None:
+    """print text with two lines after each of these characters: ., ? and :"""
+    if type(text) is not str:
         raise TypeError("text must be a string")
-    elif text is not isinstance(text, str):
-        raise TypeError("text must be a string")
-    elif len(text) < 0:
-        raise TypeError("text must be a string")
-    string = "".join([a if a not in ".?:" else a + "\n\n" for a in text])
-    print("\n".join([x.strip() for x in string.split("\n")]), end-"")
+    for i in ".?:":
+        text = (i + "\n\n").join([j.strip(" ") for j in text.split(i)])
+    print("{}".format(text), end="")

@@ -8,11 +8,11 @@ are you okay?
 Good.
 
 >>> text_indentation()
-Traceback (most recent call back)
-TypeError: text_indentation() missing one positional argument
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
 
 >>> text_indentation(None)
-Traceback (most recent call back)
+Traceback (most recent call last):
 TypeError: text must be a string
 
 >>> text_indentation(4.8)

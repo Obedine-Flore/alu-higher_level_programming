@@ -15,14 +15,6 @@ test cases of the 0-add_integer.py module
 
 The default value of 98 is assigned to b if only one value given.
 
->>> add_integer('z')
-Traceback (most recent call last):
-Typeerror: a must be an integer
-
->>> add_integer(5, 'b')
-Traceback (most recent call last):
-TypeError: b must be an integer
-
 >>> add_integer(8, '4')
 Trcaeback (most recent call last):
 TypeError: b must be an integer

@@ -1,18 +1,11 @@
 #!/usr/bin/python3
-"""
-This script does an addition of two integers
-"""
+"""This script defines an addition function"""
 
 
 def add_integer(a, b=98):
-    '''This function returns the sum of two numbers'''
-
-    a = int(a)
-    b = int(b)
-
-    if type(a) != int:
+    """This function adds two integers"""
+    if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
-    if type(b) != int:
+    if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-
     return int(a) + int(b)

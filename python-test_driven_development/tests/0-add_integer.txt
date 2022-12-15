@@ -2,10 +2,10 @@
 test cases of the 0-add_integer.py module
 ==========================================
 
->>> add_integer = _import_('0-add_integer').add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 
 >>> add_integer(7, 1)
-9
+8
 
 >>> add_integer(2, -1)
 1

@@ -1,12 +1,11 @@
 #!/usr/bin/node
-function factorise (num) {
-	if (isNan(num) || num < 0) {
-		return 1;
-	} else if (num === 0) {
-		return 1;
-	} else {
-		return num * factorial(num - 1);
+const num = parseInt(process.argv[2]);
+function factirise (num) {
+	let factorial = 1;
+	for (let i = 1; i <= num; i++) {
+		factorial *= i;
 	}
+	return factorial;
 }
-const arg = parseInt(process.argv[2]);
-console.log(factorise(arg));
+
+console.log(factorise(num));

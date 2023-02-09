@@ -1,16 +1,17 @@
 #!/usr/bin/node
 const argsCount = process.argv.length;
-const num = [];
+const numbers = [];
 switch (argsCount) {
 	case 2:
 	case 3:
 		console.log(0);
 		break;
+
 	default:
 		for (let i =2, i < argsCount; i++) {
-			nums.push(process.argv[i]);
+			numbers.push(process.argv[i]);
 		}
 		nums.sort((a, b) => b - a);
-		console.log(nums[1]);
+		console.log(numbers[1]);
 		break;
 }

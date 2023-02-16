@@ -7,10 +7,10 @@ request(process.argv[2], function (error, response, body) {
     todos.forEach((todo) => {
       if (todo.completed && completed[todo.userId] === undefined) {
         completed[todo.userId] = 1;
-    } else if (todo.completed) {
+      } else if (todo.completed) {
         completed[todo.userId] += 1;
       }
     });
-  console.log(completed);
- }
+    console.log(completed);
+  }
 });

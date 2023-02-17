@@ -9,9 +9,9 @@ req.get(url, (err, body) => {
     for (const i of JSON.parse(body.body).results) {
       const character = i.characters;
       for (const j of character) {
-	if (j.includes('18')) {
-	  times += 1;
-	}
+        if (j.includes('18')) {
+          times += 1;
+        }
       }
     }
     console.log(times);

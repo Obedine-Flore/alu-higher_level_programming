@@ -9,6 +9,6 @@ request(url, (error, response, body) => {
     console.log(error);
   } else {
     const data = JSON.parse(body);
-    console.log(data.tittle);
+    console.log(data.title);
   }
 });
